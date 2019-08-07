@@ -1,7 +1,9 @@
 package kaceac1.autonauts.proxy;
 
+import kaceac1.autonauts.Autonauts;
 import kaceac1.autonauts.ModBlocks;
 import kaceac1.autonauts.partworkshop.BlockWorkshop;
+import kaceac1.autonauts.partworkshop.TileWorkshop;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -11,6 +13,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {
@@ -26,6 +29,7 @@ public class CommonProxy {
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
       event.getRegistry().register(new BlockWorkshop());
+      GameRegistry.registerTileEntity(TileWorkshop.class, Autonauts.MODID + "_workshop");
     }
 
     @SubscribeEvent
