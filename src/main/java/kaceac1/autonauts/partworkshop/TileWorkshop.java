@@ -23,7 +23,7 @@ public class TileWorkshop extends TileEntity {
   @Override
   public void readFromNBT(NBTTagCompound compound) {
     super.readFromNBT(compound);
-    if(compound.hasKey("items")) {
+    if (compound.hasKey("items")) {
       itemStackHandler.deserializeNBT((NBTTagCompound) compound.getTag("items"));
     }
   }
@@ -41,7 +41,7 @@ public class TileWorkshop extends TileEntity {
 
   @Override
   public boolean hasCapability(Capability<?> capability, EnumFacing facing) {
-    if(capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) {
+    if (capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) {
       return true;
     }
     return super.hasCapability(capability, facing);
@@ -49,7 +49,7 @@ public class TileWorkshop extends TileEntity {
 
   @Override
   public <T> T getCapability(Capability<T> capability, EnumFacing facing) {
-    if(capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) {
+    if (capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) {
       return CapabilityItemHandler.ITEM_HANDLER_CAPABILITY.cast(itemStackHandler);
     }
     return super.getCapability(capability, facing);

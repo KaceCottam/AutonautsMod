@@ -13,6 +13,7 @@ This mod aims to bring more life into the minecraft world- with automation! It a
 * Interacting with Blocks
 * Recharging autonauts
 * Crafting
+* Harvest Crops
 
 It is based off of the game [Autonauts](https://denki.itch.io/autonauts).
 
