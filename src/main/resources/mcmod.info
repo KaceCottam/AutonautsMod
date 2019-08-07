@@ -1,16 +1,14 @@
-[
-{
+[{
   "modid": "autonauts",
   "name": "AutonautsMod",
   "description": "A mod that adds robots based on the game Autonauts.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "github.com/KaceCottam/AutonautsMod",
   "updateUrl": "",
   "authorList": ["LolmanXDXD"],
   "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
-}
-]
+}]
