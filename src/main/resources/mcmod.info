@@ -4,10 +4,10 @@
   "description": "A mod that adds robots based on the game Autonauts.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "github.com/KaceCottam/AutonautsMod",
+  "url": "https://www.github.com/KaceCottam/AutonautsMod",
   "updateUrl": "",
   "authorList": ["LolmanXDXD"],
-  "credits": "",
+  "credits": "McJty for his modding tutorials for 1.12",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
