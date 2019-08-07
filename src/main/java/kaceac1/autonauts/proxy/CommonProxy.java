@@ -1,7 +1,10 @@
 package kaceac1.autonauts.proxy;
 
+import kaceac1.autonauts.ModBlocks;
+import kaceac1.autonauts.partworkshop.BlockWorkshop;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -22,9 +25,11 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
+      event.getRegistry().register(new BlockWorkshop());
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
+      event.getRegistry().register(new ItemBlock(ModBlocks.blockWorkshop).setRegistryName(BlockWorkshop.WORKSHOP));
     }
 }
